@@ -1,0 +1,87 @@
+content_research_task:
+  description: >
+    Pesquise e reúna informações sobre {topic} para a criação de conteúdo,
+    utilizando ferramentas de busca na web e scraping de sites. Foque em:
+    - Tópicos principais e subtópicos
+    - Abordagens e perspectivas interessantes
+    - Tendências e novidades atuais
+    - Interesses do público-alvo
+    - Conteúdos populares no nicho
+    - Análise de conteúdos de concorrentes
+    Certifique-se de priorizar informações do ano atual ({current_year}).
+  expected_output: >
+    Um documento de pesquisa completo contendo:
+    - Principais tópicos e subtópicos a serem abordados
+    - Abordagens e perspectivas diferenciadas
+    - Tendências e novidades atuais
+    - Insights sobre o público-alvo
+    - Ideias e sugestões de conteúdo
+    - Análise de conteúdos populares
+    - Informações relevantes sobre concorrentes
+  agent: content_researcher
+
+blog_post_creation_task:
+  description: >
+    Crie um post de blog envolvente sobre {topic}, incluindo:
+    - Título atrativo
+    - Estrutura clara e lógica
+    - Introdução cativante
+    - Conteúdo bem pesquisado
+    - Conclusão impactante
+  expected_output: >
+    Um post de blog completo com:
+    - Título chamativo
+    - Conteúdo bem estruturado
+    - Estilo de escrita envolvente
+    - Seções e subtítulos claros
+    - Chamada para ação (CTA)
+  agent: content_writer
+
+visual_content_task:
+  description: >
+    Desenvolva ideias e descrições de conteúdo visual para o post de blog sobre {topic},
+    incluindo:
+    - Descrição da imagem de destaque
+    - Sugestões de imagens ao longo do texto
+    - Ideias para infográficos
+    - Elementos visuais para storytelling
+  expected_output: >
+    Especificações de conteúdo visual com:
+    - Descrição e especificações da imagem de destaque
+    - Descrições e localizações de imagens no corpo do texto
+    - Conceitos de infográficos e dados relevantes
+    - Sugestões de elementos visuais para narrativa
+  agent: visual_content_creator
+
+social_media_content_task:
+  description: >
+    Crie ideias de conteúdo para redes sociais sobre {topic} em diferentes plataformas,
+    incluindo:
+    - Ideias de posts específicas para cada plataforma
+    - Sugestões de hashtags
+    - Estratégias de engajamento
+    - Sugestões de calendário de publicações
+  expected_output: >
+    Um plano de conteúdo para redes sociais com:
+    - Ideias e formatos de posts por plataforma
+    - Estratégia de hashtags
+    - Táticas de engajamento
+    - Esboço do calendário de publicações
+    - Descrições de posts e sugestões de imagens
+  agent: social_media_strategist
+
+content_review_task:
+  description: >
+    Revise e melhore a qualidade do conteúdo em português sobre {topic}, com foco em:
+    - Ortografia e gramática
+    - Leitura fluida e clareza
+    - Consistência de tom e estilo
+    - Estrutura do conteúdo
+    - Nível de engajamento
+  expected_output: >
+    Um pacote de conteúdo refinado em português com:
+    - Post de blog final com todas as melhorias
+    - Especificações de conteúdo visual
+    - Plano de conteúdo para redes sociais
+    - Diretrizes de implementação
+  agent: content_editor
