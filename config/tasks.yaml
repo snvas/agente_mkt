@@ -22,19 +22,22 @@ content_research_task:
 
 blog_post_creation_task:
   description: >
-    Crie um post de blog envolvente sobre {topic}, incluindo:
-    - Título atrativo
-    - Estrutura clara e lógica
-    - Introdução cativante
-    - Conteúdo bem pesquisado
-    - Conclusão impactante
+    Crie um post de blog envolvente, informativo e bem fundamentado sobre {topic}, utilizando o material de pesquisa fornecido pela tarefa de pesquisa de conteúdo.
+    O post deve evitar frases genéricas e superficiais. Cada seção deve ser desenvolvida com:
+    - Mínimo de 3 parágrafos por seção
+    - Exemplos reais, dados ou estudos que sustentem o argumento
+    - Explicações que contextualizem o porquê e o como dos pontos abordados
+    - Conexões lógicas entre as seções
+    - Argumentação clara, com insights práticos e observações originais
+    
+    Use um tom profissional e analítico, ajustando conforme o público-alvo.
   expected_output: >
-    Um post de blog completo com:
-    - Título chamativo
-    - Conteúdo bem estruturado
-    - Estilo de escrita envolvente
-    - Seções e subtítulos claros
-    - Chamada para ação (CTA)
+    Um post de blog estruturado com:
+    - Título atrativo e otimizado
+    - Introdução instigante (mín. 2 parágrafos)
+    - Corpo com seções bem desenvolvidas (mín. 3 parágrafos por seção)
+    - Inclusão de exemplos, estatísticas, tendências ou estudos
+    - Conclusão que sintetize os aprendizados e convide à ação
   agent: content_writer
 
 visual_content_task:
