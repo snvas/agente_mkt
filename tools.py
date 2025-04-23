@@ -2,19 +2,19 @@ from langchain_community.tools import DuckDuckGoSearchRun
 from crewai.tools import BaseTool
 import datetime
 from typing import Any
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, AliasChoices
 
 # Initialize the DuckDuckGo search
 search_tool = DuckDuckGoSearchRun()
 
 class WebSearchSchema(BaseModel):
-    query: str = Field(description="O texto que você quer pesquisar na web")
+    query: str = Field(description="O texto que você quer pesquisar na web", validation_alias=AliasChoices("query", "description"))
 
 class ContentResearchSchema(BaseModel):
-    query: str = Field(description="O tópico ou assunto que você quer pesquisar em detalhes")
+    query: str = Field(description="O tópico ou assunto que você quer pesquisar em detalhes", validation_alias=AliasChoices("query", "description"))
 
 class TrendAnalysisSchema(BaseModel):
-    topic: str = Field(description="O tópico para analisar tendências atuais")
+    topic: str = Field(description="O tópico para analisar tendências atuais", validation_alias=AliasChoices("topic", "description"))
 
 class WebSearchTool(BaseTool):
     name: str = "Web Search"
@@ -57,6 +57,7 @@ class TrendAnalysisTool(BaseTool):
         raise NotImplementedError("TrendAnalysisTool does not support async")
 
 # Initialize tools
+
 web_search = WebSearchTool()
 content_research = ContentResearchTool()
 trend_analysis = TrendAnalysisTool()
